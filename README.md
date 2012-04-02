@@ -8,7 +8,7 @@ You need it if you have to deal with the [same-origin policy](http://en.wikipedi
 
 ## Do I have to install it?
 
-No but you can. JSONProxy is hosted on a [Heroku](http://heroku.com) server accessible on [http://jsonproxy.herokuapp.com](http://jsonproxy.herokuapp.com).
+No but you can. JSONProxy is hosted on a [Heroku](http://heroku.com) server accessible on [http://jasonproxy.herokuapp.com](http://jsonproxy.herokuapp.com).
     
 ## How do I install it?
 
