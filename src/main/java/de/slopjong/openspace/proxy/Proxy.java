@@ -65,8 +65,6 @@ public class Proxy extends HttpServlet
 		// the api key sent by a privileged user
 		String apikey = req.getParameter("api");
 		
-		System.out.println("API key from URL " + apikey);
-		
 		// if both keys match then process the request
     	if( _apikey.equals(apikey))
     	{

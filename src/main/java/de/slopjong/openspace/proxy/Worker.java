@@ -105,6 +105,8 @@ public class Worker
 		 */
 		
 		response.setHeader("Content-type", "application/json");
+		response.setHeader("Access-Control-Allow-Origin", "*");
+		response.setHeader("Cache-Control", "no-cache");
 		response.getWriter().print(output + "\n");
 	}
 	
