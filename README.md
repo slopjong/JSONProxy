@@ -56,3 +56,7 @@ First both examples make sense to bypass the SOP whereas the latter makes sense 
 	
 	proxy_call_url="http://jsonproxy.herokuapp.com?api=${api_key}&url=${json_url}"
 	curl --silent $proxy_call_url
+	
+If you visit [http://jasonproxy.herokuapp.com](http://jsonproxy.herokuapp.com) in the browser you won't see anything because it's a pure API-based service. You also need an API key to use it because bots are disliked very much and if you are one, you are wrong here.
+
+Drop me a private message or file an issue to get your own key. You'll get it for free.
