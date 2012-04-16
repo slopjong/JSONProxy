@@ -8,7 +8,7 @@ You need it if you have to deal with the [same-origin policy](http://en.wikipedi
 
 ## Do I have to install it?
 
-No but you can. JSONProxy is hosted on a [Heroku](http://heroku.com) server accessible on [http://jasonproxy.herokuapp.com](http://jsonproxy.herokuapp.com).
+No but you can. JSONProxy is hosted on a [Heroku](http://heroku.com) server accessible on [http://jasonproxy.herokuapp.com](http://jasonproxy.herokuapp.com).
     
 ## How do I install it?
 
@@ -26,7 +26,7 @@ First both examples make sense to bypass the SOP whereas the latter makes sense 
 	var json_url = "http://openspace.slopjong.de/directory.json";
 	var api_key = "52fffef6c49490f912e8ce3b99c4679bc85af8d0278abb5ca4a7b055cf54c2d2";
 	
-	jQuery.getJSON("http://jsonproxy.herokuapp.com?api="+ api_key +"&url="+ json_url,
+	jQuery.getJSON("http://jasonproxy.herokuapp.com?api="+ api_key +"&url="+ json_url,
 		function(data){
 			// something with the loaded JSON file
 		}
@@ -39,7 +39,7 @@ First both examples make sense to bypass the SOP whereas the latter makes sense 
 	$json_url = "http://openspace.slopjong.de/directory.json";
 	$api_key = "52fffef6c49490f912e8ce3b99c4679bc85af8d0278abb5ca4a7b055cf54c2d2";
 	
-	$proxy_call_url = "http://jsonproxy.herokuapp.com?api=" . $api_key . "&url=". $json_url;
+	$proxy_call_url = "http://jasonproxy.herokuapp.com?api=" . $api_key . "&url=". $json_url;
 	
 	$ch = curl_init($proxy_call_url);
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -54,9 +54,9 @@ First both examples make sense to bypass the SOP whereas the latter makes sense 
 	json_url=http://openspace.slopjong.de:8000/directory.json
 	api_key=52fffef6c49490f912e8ce3b99c4679bc85af8d0278abb5ca4a7b055cf54c2d2
 	
-	proxy_call_url="http://jsonproxy.herokuapp.com?api=${api_key}&url=${json_url}"
+	proxy_call_url="http://jasonproxy.herokuapp.com?api=${api_key}&url=${json_url}"
 	curl --silent $proxy_call_url
 	
-If you visit [http://jasonproxy.herokuapp.com](http://jsonproxy.herokuapp.com) in the browser you won't see anything because it's a pure API-based service. You also need an API key to use it because bots are disliked very much and if you are one, you are wrong here.
+If you visit [http://jasonproxy.herokuapp.com](http://jasonproxy.herokuapp.com) in the browser you won't see anything because it's a pure API-based service. You also need an API key to use it because bots are disliked very much and if you are one, you are wrong here.
 
 Drop me a private message or file an issue to get your own key. You'll get it for free.
